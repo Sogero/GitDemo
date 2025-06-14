@@ -3,4 +3,5 @@ ${URL}          https://www.saucedemo.com/
 ${BROWSER}      Chrome
 ${USERNAME}     standard_user
 ${PASSWORD}     secret_sauce
-${TEST}         UPDATEPUSHTEST
+
+${NEW FROM DEVX}    HAHAHHAH
