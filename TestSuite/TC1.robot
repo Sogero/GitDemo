@@ -11,5 +11,8 @@ Add Product to cart
     click button    //*[@id="add-to-cart-sauce-labs-backpack"]
     Element Should Be Visible    //*[@id="shopping_cart_container"]/a/span
 
-
+Add Product to cart 2
+    [Tags]  Functional
+    click button    //*[@id="add-to-cart-sauce-labs-backpack"]
+    Element Should Be Visible    //*[@id="shopping_cart_container"]/a/span
 

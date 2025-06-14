@@ -13,3 +13,6 @@ Valid Creds
     input password      //*[@id="password"]         ${PASSWORD}
     click element       //*[@id="login-button"]
     wait until element is visible    //*[@id="header_container"]/div[2]/span
+    wait until element is visible    //*[@id="header_container"]/div[2]/span
+    wait until element is visible    //*[@id="header_container"]/div[2]/span
+    wait until element is visible    //*[@id="header_container"]/div[2]/span
