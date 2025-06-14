@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.2 on win32)" generated="2025-02-08T23:57:38.780888" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\Joshua\PycharmProjects\Automation\TestCases\TC1.robot">
+<test id="s1-t1" name="Login using valid creds" line="7">
+<kw name="Open the browser">
+<msg time="2025-02-08T23:57:38.985135" level="FAIL">No keyword with name 'Open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</msg>
+<status status="FAIL" start="2025-02-08T23:57:38.985135" elapsed="0.000000">No keyword with name 'Open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</kw>
+<kw name="Valid Creds">
+<status status="NOT RUN" start="2025-02-08T23:57:38.985135" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-08T23:57:38.985135" elapsed="0.000000">No keyword with name 'Open the browser' found. Did you mean:
+    SeleniumLibrary.Open Browser</status>
+</test>
+<test id="s1-t2" name="Add Product to cart" line="10">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-08T23:57:38.985135" level="INFO">Clicking button '//*[@id="add-to-cart-sauce-labs-backpack"]'.</msg>
+<msg time="2025-02-08T23:57:38.985135" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-02-08T23:57:38.985135" level="FAIL">No browser is open.</msg>
+<arg>//*[@id="add-to-cart-sauce-labs-backpack"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-08T23:57:38.985135" elapsed="0.005948">No browser is open.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-08T23:57:38.991083" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-08T23:57:38.985135" elapsed="0.005948">No browser is open.</status>
+</test>
+<status status="FAIL" start="2025-02-08T23:57:38.780888" elapsed="0.210195"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="0" fail="2" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-08T23:57:38.985135" level="ERROR">Error in file 'C:\Users\Joshua\PycharmProjects\Automation\TestCases\TC1.robot' on line 3: Resource file 'TestCases\common_keywords.robot' does not exist.</msg>
+<msg time="2025-02-08T23:57:38.985135" level="ERROR">Error in file 'C:\Users\Joshua\PycharmProjects\Automation\TestCases\TC1.robot' on line 4: Resource file 'TestCases\common_variable.robot' does not exist.</msg>
+</errors>
+</robot>

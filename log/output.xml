@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2025-02-09T22:29:31.406424" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\Joshua\PycharmProjects\Automation\TestSuite\TC1.robot">
+<test id="s1-t1" name="Add Product to cart" line="9">
+<kw name="Login with valid creds" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:31.562687" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-09T22:29:31.562687" elapsed="4.402259"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-09T22:29:35.964946" elapsed="0.019285"/>
+</kw>
+<kw name="Valid Creds" owner="common_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:35.984231" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-09T22:29:35.984231" elapsed="0.088568"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:36.073776" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-09T22:29:36.094522" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-09T22:29:36.072799" elapsed="0.067441"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:36.141244" level="INFO">Clicking element '//*[@id="login-button"]'.</msg>
+<arg>//*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-09T22:29:36.140240" elapsed="0.060752"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="header_container"]/div[2]/span</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-09T22:29:36.200992" elapsed="0.027405"/>
+</kw>
+<status status="PASS" start="2025-02-09T22:29:35.984231" elapsed="0.244166"/>
+</kw>
+<status status="PASS" start="2025-02-09T22:29:31.562687" elapsed="4.665710"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:36.234364" level="INFO">Clicking button '//*[@id="add-to-cart-sauce-labs-backpack"]'.</msg>
+<arg>//*[@id="add-to-cart-sauce-labs-backpack"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-09T22:29:36.228397" elapsed="0.052452"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-09T22:29:36.295135" level="INFO">Element '//*[@id="shopping_cart_container"]/a/span' is displayed.</msg>
+<arg>//*[@id="shopping_cart_container"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-09T22:29:36.280849" elapsed="0.014286"/>
+</kw>
+<tag>Functional</tag>
+<status status="PASS" start="2025-02-09T22:29:31.562687" elapsed="4.732448"/>
+</test>
+<status status="PASS" start="2025-02-09T22:29:31.406424" elapsed="4.889735"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
